@@ -12,6 +12,6 @@ echo "Start supervisor using the appropriate supervisord conf file"
 supervisord -c supervisord.conf
 echo "sleep for 5 seconds before checking supervisorctl status"
 sleep 5;
-supervisorctl status | mailx -s "Cloud Supervisord workers status" amadi.chuck@gmail.com
+supervisorctl status | mailx -s "Cloud Supervisord workers status" userx.@gmail.com
 echo "Check that workers are running from the email notification!"
 supervisorctl status
